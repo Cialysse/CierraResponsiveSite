@@ -1,0 +1,141 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Nunito&family=Oxygen:wght@400;700&display=swap');
+
+/* Color Styles */
+:root {
+    --header-height: 3.5rem;
+
+    /* HSL Colors */
+    --cerulean-blue: hsl(228° , 63% , 44%);
+    --rum: hsl(266° , 15% , 53%);
+    --bouquet: hsl(315° , 27% , 55%);
+    --polo-blue: hsl(227° , 36% , 68%);
+    --turkish-rose: hsl(331° , 31% , 58%);
+
+    --first-hue: 250;
+    --sat: 66%;
+    --lig: 75%;
+    --second-hue: 219;
+
+    --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
+    --title-color: hsl(var(--second-hue), 15%, 95%);
+    --text-color: hsl(var(--second-hue), 8%, 75%);
+    --text-color-light: hsl(var(--second-hue), 4%, 55%);
+    --body-color: hsl(315° , 29% , 14%);
+    --container-color: hsl(var(--second-hue), 32%, 12%);
+
+    /* Fonts and Typography */
+    --body-font: 'Cairo', sans-serif;
+    --large-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --tiny-font-size: .625rem;
+    
+    /* font weight */
+    --font-medium: 500;
+    --font-semibold: 600;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --tiny-font-size: .813rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color:#0d163a;
+    color: #afb8d9;
+}
+
+h1, h2, h3 {
+    color: #afb8d9;
+    font-weight: var(--font-semibold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+    padding: 4.5rem 0 1rem;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    color: #afb8d9;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    color: #afb8d9;
+}
